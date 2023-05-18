@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://telegra.ph/file/73db3b1bead2d712c0dce.jpg"
+  <img src="https://telegra.ph/file/fbf4efda024d766f755a4.jpg"
 </p>
 <h1 align="center">
-  <b> Make By JK DEVLOPER</b>
+  <b> Make By DEVLOPER</b>
 </h1>
 
 
