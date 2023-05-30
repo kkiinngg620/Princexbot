@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('📥 Join BackUp Channel 📥', url=f'https://t.me/moviieeadda3')
+                InlineKeyboardButton('📥 Join BackUp Channel 📥', url=f'https://t.me/Moviesbank_Corporation')
             ],
             [
-                InlineKeyboardButton('⚡ Movie Updates ⚡', url=f'https://t.me/moviieeadda2'),
+                InlineKeyboardButton('⚡ Movie Updates ⚡', url=f'https://t.me/MOVIES_BANK_2'),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -45,7 +45,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('📥 Join Backup Channel 📥', url=f'https://t.me/moviieeadda3')
+            InlineKeyboardButton('📥 Join Backup Channel 📥', url=f'https://t.me/Moviesbank_Corporation')
             ],[
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
@@ -88,7 +88,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('📥 Join Backup Channel 📥', url=f'https://t.me/moviieeadda3')
+            InlineKeyboardButton('📥 Join Backup Channel 📥', url=f'https://t.me/Moviesbank_Corporation')
             ],[
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
@@ -241,7 +241,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('📥 Join BackUp Channel 📥', url='https://t.me/moviieeadda3')] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('📥 Join BackUp Channel 📥', url='https://t.me/Moviesbank_Corporation')] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
