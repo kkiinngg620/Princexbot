@@ -250,7 +250,7 @@ async def next_page(bot, query):
             ]
     btn.insert(0,
         [   
-	    InlineKeyboardButton(text='⚡Join Backup Channel⚡', url=f'https://t.me/moviieeadda3')
+	    InlineKeyboardButton(text='⚡Join Backup Channel⚡', url=f'https://t.me/Moviesbank_Corporation')
         ]   
     )
 
@@ -581,7 +581,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('📥 Join Backup Channel 📥', url=f'https://t.me/moviieeadda3')
+            InlineKeyboardButton('📥 Join Backup Channel 📥', url=f'https://t.me/Moviesbank_Corporation')
             ],[
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
@@ -936,7 +936,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text='⚡Join Backup Channel⚡', url=f'https://t.me/moviieeadda3')
+	    InlineKeyboardButton(text='⚡Join Backup Channel⚡', url=f'https://t.me/Moviesbank_Corporation')
         ] 
     )
 
@@ -988,7 +988,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\nमूवी का नाम सही है फिर भी मूवी नही मिल रही है तो मूवी 24 घंटे के अंदर ग्रुप में आ जाएगी\nJoin BackUp 👉 @Moviieeadda3 \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @admin"
+        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\nमूवी का नाम सही है फिर भी मूवी नही मिल रही है तो मूवी 24 घंटे के अंदर ग्रुप में आ जाएगी\nJoin BackUp 👉 @Moviesbank_Corporation \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @admin"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
