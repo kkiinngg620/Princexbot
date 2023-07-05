@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'AutofilterBot')
 API_ID = int(environ.get('API_ID', '27157998'))
 API_HASH = environ.get('API_HASH', '45d09c93e37c9b93b6535949c898f906')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6057056834:AAHN3QTTNtMI9Lcibn-_w-E4Uevl5DVOHHs")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6393149684:AAFuwMwlI8H9NGRJMQX9TsztadVCiAX93BI")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -22,11 +22,11 @@ PORT = environ.get("PORT", "8080")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/6cc72163d754fd5f1db0b.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/48bcbe26130d22c3d99a5.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1452198353 5403432874').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001631824320').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001394569462').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', '-1001814749004')
@@ -35,12 +35,12 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://BOOMERMAN:BOOMERMAN@cluster0.7iadxlk.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mdsalman098123:mdsalman098123@cluster0.jcnrac7.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "mdsalman098123")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001883653903'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001950272645'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviieeadda3')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
@@ -71,7 +71,7 @@ LAZY_MODE = bool(environ.get("LAZY_MODE", "true"))
 lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '1452198353').split()]
 LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else []
 # Only Give Value in LAZY_RENAMERS if you have enabled LAZY_MODE ----- !
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1001980223878'))
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1001800513140'))
 #   REQ_CHANNEL is for the logs of that content name which is not found in group -- !
 URL_MODE = is_enabled((environ.get("URL_MODE", "False")), True)
 # Use True false in url mode => Set value true if you want shortlinks - else - use value False ----- !
