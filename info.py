@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'AutofilterBot')
 API_ID = int(environ.get('API_ID', '27157998'))
 API_HASH = environ.get('API_HASH', '45d09c93e37c9b93b6535949c898f906')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6393149684:AAFuwMwlI8H9NGRJMQX9TsztadVCiAX93BI")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6085887811:AAEiyiCkksmfGiQtpfMzgnDhf4nZQ7Bjqr0")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -35,12 +35,12 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://salonisaloni81334:salonisaloni81334@cluster0.3eywwab.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "salonisaloni81334")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://kabibox525:kabibox525@cluster0.pzpuebr.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "kabibox525")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001950272645'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001845562880'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviieeadda3')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
@@ -73,7 +73,7 @@ LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else []
 # Only Give Value in LAZY_RENAMERS if you have enabled LAZY_MODE ----- !
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1001800513140'))
 #   REQ_CHANNEL is for the logs of that content name which is not found in group -- !
-URL_MODE = is_enabled((environ.get("URL_MODE", "True")), True)
+URL_MODE = is_enabled((environ.get("URL_MODE", "False")), True)
 # Use True false in url mode => Set value true if you want shortlinks - else - use value False ----- !
 
 # URL Shortener
